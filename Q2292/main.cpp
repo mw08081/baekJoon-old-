@@ -25,7 +25,6 @@ int main()
 			a = a + d * n;
 		}
 		cout << n + 1 << endl;
-		//None use aMasUno
 	}
 	
 	return 0;
