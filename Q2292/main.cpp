@@ -8,8 +8,7 @@ int main()
 {
 	int dist = 0;
 	
-	int a;
-	int aMasUno;
+	int a = 1;
 	int n = 1;
 	int d = 6;
 
@@ -19,16 +18,12 @@ int main()
 		cout << 1 << endl;
 	else
 	{
-		a = 1;
-		aMasUno = a + n * d;
-		while (aMasUno < dist)
+		a = a + n * d;
+		while (a < dist)
 		{
 			n++;
-			a = aMasUno;
-
-			aMasUno = a + d * n;
+			a = a + d * n;
 		}
-
 		cout << n + 1 << endl;
 	}
 	
