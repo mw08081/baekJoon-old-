@@ -7,3 +7,8 @@
 
 시그마로 ![캡처](https://user-images.githubusercontent.com/58582985/137089276-6a618f8a-12b4-4c64-ad09-a451be07b1a0.PNG)를  
 계산하는 이유는 계차들이 일정한 등비/등차이기때문이다  
+
+　  
+　  
+다음 그림을 참고하자  
+![계차수열](https://user-images.githubusercontent.com/58582985/137089641-d89992f5-b708-4b9e-ba37-4cbd229b1e18.jpg)  
