@@ -1,4 +1,4 @@
-대당 순이익이 고정비용을 넘기는 순간이 손익분기점이었다.
+대당 순이익이 고정비용을 넘기는 순간이 손익분기점이다.
 ```c++
 while(staticPrice + valuablePrice * x > salePrice * x)
   x++;
