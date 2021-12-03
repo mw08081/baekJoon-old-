@@ -11,6 +11,6 @@
 
 　  
 ## Special
-1929  - 에라토스테네스의 체
+1929  - 에라토스테네스의 체  
 10757 - LongInt 연산(using string)   
 
