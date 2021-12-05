@@ -3,9 +3,10 @@
 　  
    　  
 ## helped
+1011(Fly me to the Alpha Centauri)  
 1152 - getline(cin, str); (공백이 있는 string 입력받기)   
 1193 - 계차수열   
-1712  
+1712(손익분기점)  
 1929 - 에라토스테네스의 체 +++ fill_n, endl vs '\n'  
 2292 - 등차수열    
 
