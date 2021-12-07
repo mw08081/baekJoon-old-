@@ -14,10 +14,7 @@ int main()
         cin >> st >> end;
         step = end - st;
         cnt = 0;
-
-        // while(n * n <= step)
-        //    n++;
-        // n--;
+        
         n = sqrt(step);
 
         remain = step - n * n;
