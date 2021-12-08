@@ -1,4 +1,3 @@
-//1978
 #include <iostream>
 using namespace std;
 
