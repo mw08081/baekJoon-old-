@@ -1,5 +1,3 @@
-//1157
-
 #include <iostream>
 using namespace std;
 
