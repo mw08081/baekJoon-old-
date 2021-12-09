@@ -9,8 +9,9 @@
 1193 - 계차수열   
 1712(손익분기점)  
 1929 - 에라토스테네스의 체 +++ fill_n, endl vs '\n'  
-2292 - 등차수열    
-
+2292 - 등차수열  
+3053 - M_PI, pow() feat. (#include <cmath>, #define _USE_MATH_DEFINES)
+　  
 　  
 ## Special
 1929  - 에라토스테네스의 체  
