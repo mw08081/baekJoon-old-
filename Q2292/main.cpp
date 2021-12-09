@@ -1,7 +1,4 @@
-//21.10.13 Q2292
-
 #include <iostream>
-
 using namespace std;
 
 int main()
