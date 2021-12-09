@@ -1,3 +1,5 @@
+## 손익분기점 시간초과 해결방법
+
 대당 순이익이 고정비용을 넘기는 순간이 손익분기점이다.
 ```c++
 while(staticPrice + valuablePrice * x > salePrice * x)
