@@ -3,6 +3,7 @@
 　  
    　  
 ## helped
+1008 - 
 1011(Fly me to the Alpha Centauri)  
 1152 - getline(cin, str); (공백이 있는 string 입력받기)   
 1193 - 계차수열   
