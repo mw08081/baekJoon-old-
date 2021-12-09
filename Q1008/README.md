@@ -48,5 +48,5 @@ cout << dNum << endl;
 cout.precision(originSize);
 ```
 　  
-+++ streamsize는 ![streamsizePath](https://user-images.githubusercontent.com/58582985/145427782-c608cf17-de1b-4538-adcf-09301bbe6b34.PNG)에 정의되어있고  
+streamsize는 ![streamsizePath](https://user-images.githubusercontent.com/58582985/145427782-c608cf17-de1b-4538-adcf-09301bbe6b34.PNG)에 정의되어있고  
 cout.precision()은 ![precisionPath](https://user-images.githubusercontent.com/58582985/145427773-b5f1f418-f979-4f40-aee1-816716d128c3.PNG)에 정의되어있다  
