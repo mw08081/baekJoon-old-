@@ -7,7 +7,7 @@
 1011 - Fly me the Alpha Centauri  
 1929 - 에라토스테네스의 체  
 1712 - 손익분기점  
-
+　  
 - MatheMatical  
 1193 - 계차수열   
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1193/README.md  
