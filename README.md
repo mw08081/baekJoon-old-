@@ -3,26 +3,24 @@
 　  
    　  
 ## helped
-1008, 3053 - cout.precision(), cout << fixed, setprecisioin()  
-https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1008/README.md  
-　  
-1011(Fly me to the Alpha Centauri)  
-　  
-1152 - getline(cin, str)  
-https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1152/README.md  
-　  
+- Algorithmic  
+1011 - Fly me the Alpha Centauri  
+1929 - 에라토스테네스의 체  
+1712 - 손익분기점  
+
+- MatheMatical  
 1193 - 계차수열   
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1193/README.md  
-
-1712(손익분기점)  
-https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1712/README.md  
-  　  
-1929 - 에라토스테네스의 체 +++ fill_n, endl vs '\n'  
-https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md  
-  　  
 2292 - 등차수열  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q2292/README.md  
-  　  
+  　
+- Linguistic  
+1008, 3053 - cout.precision(streamsize), cout << fixed, setprecisioin(streamsize), std::setw(streamsize), std::fill(char), std::right/std::left  
+https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1008/README.md  
+1152 - getline(cin, str)  
+https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1152/README.md  
+1929 - fill_n, endl vs '\n'  
+https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md  
 3053 - M_PI, pow(), powl() feat. (#include <cmath>, #define _USE_MATH_DEFINES)
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
    
