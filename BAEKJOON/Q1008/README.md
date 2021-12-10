@@ -65,7 +65,7 @@ cout << dNum << endl;                   //156.340000
 ```
 
 ### setprecision(streamsize)
-일단 setprecision(streamsize)는 iomanip Header에 정의된 내용이다  
+일단 setprecision(streamsize)는 iomanip Header에 정의된 내용이다(#include <iomanip>)  
 　  
 사실 setprecision(streamsize)과 cout.precision(streamsize)의 차이를 잘 모르겠다  
 또 setprecision(streamsize)의 사용법도 잘 모르겠다 아래의 코드를 살펴보자  
