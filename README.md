@@ -15,7 +15,7 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1193/README.md
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q2292/README.md  
   　
 - Linguistic  
-1008, 3053 - cout.precision(streamsize), cout << fixed, setprecisioin(streamsize), std::setw(streamsize), std::fill(char), std::right/std::left  
+1008, 3053 - cout.precision(streamsize), cout << fixed, setprecisioin(streamsize)  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1008/README.md  
 1152 - getline(cin, str)  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1152/README.md  
