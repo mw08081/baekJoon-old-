@@ -24,7 +24,8 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q2292/README.md  
   　  
 3053 - M_PI, pow(), powl() feat. (#include <cmath>, #define _USE_MATH_DEFINES)
-  
+https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
+   
 　  
 ## Special
 1929  - 에라토스테네스의 체  
