@@ -65,8 +65,10 @@ cout << dNum << endl;                   //156.340000
 ```
 
 ### setprecision(streamsize)
-사실 setprecision()과 cout.precision()의 차이를 잘 모르겠다  
-또 setprecision()의 사용법도 잘 모르겠다 아래의 코드를 살펴보자  
+일단 setprecision(streamsize)는 iomanip Header에 정의된 내용이다(#include <iomanip>)  
+　  
+사실 setprecision(streamsize)과 cout.precision(streamsize)의 차이를 잘 모르겠다  
+또 setprecision(streamsize)의 사용법도 잘 모르겠다 아래의 코드를 살펴보자  
 　  
 #상황1
 ```c++
@@ -98,4 +100,4 @@ cout << setw(20) << right << setfill(' ')
 　  
 여튼 정리를 하자면 setprecision(streamsize)또한 cout << fixed과 함께 자리수를 정해주는 함수이다  
 　  
-+++ setw(streamsize)는 출력할때 너비를 의미하고 setfill(char)는 남는 공간을 char로 채우는 함수이며, 일회성으로 보여진다  
++++ std::right는 오른쪽 정렬, std::setw(streamsize)는 출력할때 너비를 의미하고 std::setfill(char)는 남는 공간을 char로 채우는 함수이며, 일회성으로 보여진다  
