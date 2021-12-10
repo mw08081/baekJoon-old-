@@ -6,7 +6,9 @@
 - Algorithmic  
 1011 - Fly me the Alpha Centauri  
 1929 - 에라토스테네스의 체  
+https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929  
 1712 - 손익분기점  
+https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1712/README.md  
 　  
 - MatheMatical  
 1193 - 계차수열   
