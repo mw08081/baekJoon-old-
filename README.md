@@ -27,7 +27,7 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
    
 　  
-## Special
+## Special(onMyWay || Hard)
 1929  - Sieve of Eratosthenes  
 10757 - LongInt Calc(using string)   
 10870 - Recursive Fibonacci  
