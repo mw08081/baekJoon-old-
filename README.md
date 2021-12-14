@@ -27,7 +27,8 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
    
 　  
-## Special
-1929  - 에라토스테네스의 체  
-10757 - LongInt 연산(using string)   
-
+## Special(onMyWay || Hard)
+1929  - Sieve of Eratosthenes  
+2447 - Recursive PrintStar  
+10757 - LongInt Calc(using string)   
+10870 - Recursive Fibonacci  
