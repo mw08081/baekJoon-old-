@@ -16,7 +16,8 @@ void RecursiveDraw(int n, int k, int i, int j)
 
     if(k > 0)
     {
-        if(((n * 2 / 3 >= i) && (n * 1 / 3 + 1 <= i) && (n * 2 / 3  >= j) && (n * 1 / 3 + 1 <= j)) || (i % k >= (k / 3 + 1) && i % k <= (k / 3 * 2)) && (j % k >= (k / 3 + 1) && j % k <= (k / 3 * 2)))
+        if(((n * 2 / 3 >= i) && (n * 1 / 3 + 1 <= i) && (n * 2 / 3  >= j) && (n * 1 / 3 + 1 <= j)) ||
+         (i % k >= (k / 3 + 1) && i % k <= (k / 3 * 2)) && (j % k >= (k / 3 + 1) && j % k <= (k / 3 * 2)))
         {
             cout << " ";
             RecursiveDraw(n, n / 3, i, j - 1); 
