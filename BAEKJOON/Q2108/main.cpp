@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 using namespace std;
 
 void Swap(int * n1, int * n2)
@@ -49,20 +50,51 @@ int GetMode(int * arr, int n)
     if(n == 1)
         return arr[0];
 
-    pair<int, int> modeValue[2] = {{-4001,0}, {-4001,0}};
+    vector<int> vec;
 
-    int tmp = 1, i;
+    int tmp = 1, i, maxMode = -4000001;
     for (i = 1; i < n; i++)
     {
         if(arr[i - 1] == arr[i])
             tmp++;
         else//if(arr[i - 1] != arr[i])
         {
-            
-            
+            if(maxMode < tmp)
+            {
+                vec.clear();
+                maxMode = tmp;
+                vec.push_back(arr[i - 1]);
+            }
+            else if(maxMode == tmp)
+            {
+                vec.push_back(arr[i - 1]);
+            }
             tmp = 1;
         }
     }
+    if(maxMode < tmp)
+    {
+        vec.clear();
+        maxMode = tmp;
+        vec.push_back(arr[i - 1]);
+    }
+    else if(maxMode == tmp)
+    {
+        vec.push_back(arr[i - 1]);
+    }
+    
+    // cout << "maxMode " << maxMode << endl << "list ";
+    // for (int i = 0; i < vec.size(); i++)
+    //     cout << vec.at(i) << " ";
+    // cout << endl;
+    
+    if(vec.size() > 2)
+        return vec.at(1);
+    else if(vec.size() == 2)
+        return vec.at(0);
+    else
+        return vec.at(0);
+
 }
 
 int GetScope(int * arr, int n)
