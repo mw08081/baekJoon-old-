@@ -48,7 +48,8 @@
         "xutility": "cpp",
         "deque": "cpp",
         "list": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "vector": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

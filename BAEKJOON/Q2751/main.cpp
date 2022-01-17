@@ -1,6 +1,95 @@
 #include <iostream>
+#include <vector>
 using namespace std;
 
+void Swap(int * n1, int * n2)
+{
+    int tmp = *n1;
+    *n1 = *n2;
+    *n2 = tmp;
+}
+
+void InsertData(vector<int> * tree, int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        int tmp;
+        cin >> tmp;
+
+        tree->push_back(tmp);
+    }
+}
+void MaxHeapify(vector<int> * tree)
+{
+    int len = tree->size() - 1;
+    
+    for (int i = len / 2; i > 0; i--)
+    {
+        int p = i, c = p * 2;                       //p = Parent, c = Child
+        while(tree->size() - 1 >= p * 2)
+        {
+            if(tree->size() - 1>= c + 1 && tree->at(c + 1) > tree->at(c))  c++;     //자식이 i * 2 + 1까지 존재하는 경우
+            if(tree->at(p) > tree->at(c))  break;                                   //부모가 자식보다 큰 경우(아래로는 더 이상 검사할 필요 없음)
+
+            Swap(&tree->at(p), &tree->at(c));
+
+            p = c;                                                                  //아래에 대해 검사하기 위한 절차
+            c = p * 2;                                                              
+        }
+    }
+}
+
+void PrintData(vector<int> * tree)
+{
+    for (int i = 1; i < tree->size(); i++)
+        cout << tree->at(i) << " ";
+    cout << '\n';
+}
+
+void ExtractData(vector<int> * tree)
+{
+    vector<int> res;
+
+    while(tree->size() > 1)
+    {
+        Swap(&tree->at(1), &tree->at(tree->size() - 1));
+        res.push_back(tree->back());
+        tree->pop_back();
+
+        int p = 1, c = p * 2;
+        while(tree->size() - 1 >= p * 2)
+        {
+            if(tree->size() - 1 >= c + 1 && tree->at(c + 1) > tree->at(c))  c++;
+            if(tree->at(p) > tree->at(c)) break;
+
+            Swap(&tree->at(p), &tree->at(c));
+
+            p = c;
+            c = p * 2;
+        }
+    }
+
+    vector<int>::iterator it;
+    for (it = res.end() - 1; it > res.begin() - 1; it--)
+        cout << *it << " ";
+}
+
+int main()
+{
+    vector<int> tree{0};
+
+    int n;
+    cin >> n;
+
+    InsertData(&tree, n);
+    MaxHeapify(&tree);
+    ExtractData(&tree);
+
+    return 0;
+}
+
+
+/*
 #define MAX 1000000
 
 struct MaxHeap {
@@ -66,16 +155,16 @@ void HeapSort(MaxHeap * maxHeap, int n)
         
         maxHeap->size--;
 
-        int cur = 1, child = cur * 2;
+        int cur = 1, c = cur * 2;
         while(cur * 2 <= maxHeap->size)
         {
-            if(child + 1 <= maxHeap->size && maxHeap->tree[child] > maxHeap->tree[child + 1]) child++;
+            if(c + 1 <= maxHeap->size && maxHeap->tree[c] > maxHeap->tree[c + 1]) c++;
 
-            if(maxHeap->tree[child] < maxHeap->tree[cur])
+            if(maxHeap->tree[c] < maxHeap->tree[cur])
                 break;
 
-            Swap(maxHeap, &maxHeap->tree[cur], &maxHeap->tree[child]);
-            cur = child;
+            Swap(maxHeap, &maxHeap->tree[cur], &maxHeap->tree[c]);
+            cur = c;
         }
     }
 }
@@ -104,3 +193,4 @@ int main()
 
     return 0;
 }
+*/
