@@ -13,7 +13,6 @@ double fVal;
 cVal = ceil(val);
 fVal = floor(val);
 ```
-과 같이 사용한다
 
 참고로 반올림은 기존 값에서 0.5f를 더한 뒤 버림을 해주면 된단다.
 `floor(val + 0.5f)`
