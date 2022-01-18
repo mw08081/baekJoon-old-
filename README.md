@@ -10,9 +10,9 @@
 1929 - 에라토스테네스의 체  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929  
 1712 - 손익분기점  
+https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1712/README.md  
 2750 - O(N^2) BubbleSort, SelectSort, QuickSort, InsertionSort  
 2751 - O(N lgN) HeapSort  
-https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1712/README.md  
 7568 - 덩치  
 　  
 - MatheMatical  
