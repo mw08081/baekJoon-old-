@@ -32,8 +32,6 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md
 https://blog.naver.com/president304/222422474064  
 2108 - ceil(), floor()  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q2108/README.md  
-2801 - floot(), ceil() feat. (#include <cmath>)  
-https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
 3053 - M_PI, pow(), powl() feat. (#include <cmath>, #define _USE_MATH_DEFINES)  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
 7568 - pair<T, T>  
