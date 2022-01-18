@@ -11,7 +11,7 @@ double cVal;
 double fVal;
 
 cVal = ceil(val);       //올림
-fVal = floor(val);      //
+fVal = floor(val);      //내림
 ```
 
 참고로 반올림은 기존 값에서 0.5f를 더한 뒤 버림을 해주면 된단다.
