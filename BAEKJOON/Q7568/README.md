@@ -1,5 +1,6 @@
 ## Pair<T, T>
 
+###  Dic와 비슷한 pair  
 Dictionary<T, T> 와 같은 것이 cpp에서는 pair이라는 구조체가 있다  
 이는 pair<T, T>로 사용하며 기본적인으로 first, second의 멤버변수를 가지고 있다  
 
@@ -21,7 +22,7 @@ for(int i = 0; i < 10; i++)
     datas[i].second = i + 1; 
 }
 ```
-
+### Vector와 Pair같이 사용하기
 ```c++
 #include <vector>
 
