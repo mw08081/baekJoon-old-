@@ -27,5 +27,5 @@ for(int i = 0; i < 10; i++)
 
 vector<pair<int, int>> pairVec;
 
-pairVec.push_back ...
+pairVec.push_back(pair<int, int>(30, 50));
 ```
