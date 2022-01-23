@@ -1,9 +1,9 @@
-### 정렬과 시간복잡도
+## 정렬과 시간복잡도
 시간복잡도가 O(N^2), O(N ln N)인 sort방식들에 대해 알아봤다  
 O(N^2)인 정렬방식은 bubbleSort, SelectSort가 있으며 O(N ln N)의 정렬방식은 HeapSort, MergeSort가 있었다
 이때 QuickSort는 평균적으로 O(N ln N)의 성능이지만 최악의 경우 시간복잡도는 O(N^2)에 해당했다
   
-### #include <algorithm>의 sort()함수
+## #include <algorithm>의 sort()함수
 시간복잡도가 O(N ln N)인 HeapSort를 매번 구현하여 프로그래밍에 사용하는 것은 시간낭비였고, 실제로 기존에 O(N ln N)에 해당하는 정렬방식을 구현하여 미리 만들어논 함수가 존재했다  
 해당 함수를 이용하기위해서는 `#include <algorithm>`을 불러온 후 `sort()`함수를 통해 구현할 수 있었다  
   
