@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-
+/*
 void InsertData(vector<pair<int, int>> * tree)
 {
     int n;
@@ -82,6 +82,42 @@ int main()
     InsertData(&tree);
     sort(i, i)
     HeapSort(&tree);
+
+    return 0;
+}
+*/
+
+bool CompareFunc(int n1, int n2)
+{
+    return n1 < n2;
+}
+
+int main()
+{
+    /*
+    vector< pair<int, int> > arr;
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int n1, n2;
+        cin >> n1 >> n2;
+
+        arr.push_back(pair<int, int>(n1, n2));
+    }
+    sort(arr.begin(), arr.end(), CompareFunc);
+
+    for (int i = 0; i < n; i++)
+        cout << arr.at(i).first << " " << arr.at(i).second << '\n';
+    */
+    int arr[] = { 5,3,2,6,8,0,10,43};
+    sort(arr, arr + 8, CompareFunc);
+    for (int i = 0; i < 8; i++)
+        cout << arr[i] << " ";
+    cout << '\n';
+
+    
 
     return 0;
 }
