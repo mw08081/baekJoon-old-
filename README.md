@@ -37,6 +37,7 @@ https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md
 7568 - `pair<T, T>`, `vector<pair<int, int>>`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q7568/README.md  
 11650 - `sort()` & `#include<algorithm>`  
+https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q11650  
 
 　  
 ## Special(onMyWay || Hard)
