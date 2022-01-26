@@ -47,7 +47,7 @@ void HeapSort(vector<pair<int, int>> * tree)
         }
     }
     
-    //MaxHeap구조에서 1번과 마지막 pair를 Swap하면서 새로운 벡터에 큰값부터 삽입
+    //MaxHeap구조에서 1번과 마지막 pair를 Swap하면서 새로운 벡터에 큰 값부터 삽입
     vector<pair<int, int>> res;
     while(tree->size() > 1)
     {
