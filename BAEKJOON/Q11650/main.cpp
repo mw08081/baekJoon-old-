@@ -89,52 +89,53 @@ int main()
 }
 */
 
-#include <iostream>
-#include <algorithm>
-
-using namespace std;
+/*                          class type sort
 
 class Student {
-public:
-	string name;
-	int score;
-	Student(string name, int score) {
-		this->name = name;
-		this->score = score;
-	}
-	// 정렬 기준은 '점수가 작은 순서' 
-	bool operator <(Student &student) {
-		return this->score < student.score;
-	}
+    public :
+    string name;
+    int sc;
+
+    Student(string name, int sc)
+    {
+        this->name = name;
+        this->sc = sc;
+    }
+
+    bool operator <(Student &student)
+    {
+        return this->sc < student.sc;
+    }
 };
 
-bool compare(int a, int b) {
-	return a > b;
-} 
 
-// bool CompFunc(Student s1, Student s2)
-// {
-//     return s1.sc < s2.sc;
-// }
-
-int main(void) {
-	Student students[] = {
-		Student("나동빈", 90),
-		Student("이상욱", 93),
-		Student("박한울", 97),
-		Student("강종구", 87),
-		Student("이태일", 92)
-	};
-	sort(students, students + 5);
-	for(int i = 0; i < 5; i++) {
-		cout << students[i].name << ' ';
-	}
+bool CompFunc(Student s1, Student s2)
+{
+    return s1.sc < s2.sc;
 }
 
+int main()
+{
+    Student students[] = {
+        Student("a", 90),
+        Student("b", 97),
+        Student("c", 89),
+        Student("d", 69)
+    };
 
+    //sort(students, students + 4);
+    sort(students, students + 4, CompFunc);
 
+    for (int i = 0; i < 4; i++)
+        cout << students[i].name << " ";
+    
+    return 0;
+}
 
-/*
+*/
+
+/*                              vector< pair<int, int> > type sort
+
 bool CompareFunc(pair<int, int> p1, pair<int, int> p2)
 {
     if(p1.first < p2.first)
@@ -173,8 +174,22 @@ int main()
 }
 */
 
-/* 
-//int Type sort 
+int main()
+{
+    vector<int> arr;
+
+    for (int i = 0; i < 5; i++)
+        arr.push_back(5 - i);
+
+    sort(arr.begin(), arr.end());
+
+    for (int i = 0; i < arr.size(); i++)
+        cout << arr.at(i) << " ";
+    
+    return 0;
+}
+
+/*                                  int Type sort 
 
 //Defalut sort Asc
 bool CompareFunc(int n1, int n2)
