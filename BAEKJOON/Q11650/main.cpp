@@ -27,6 +27,7 @@ void Swap(pair<int, int> * n1, pair<int, int> * n2)
 
 void HeapSort(vector<pair<int, int>> * tree)
 {
+    //MaxHeapify 
     for (int i = (tree->size() - 1) / 2; i > 0; i--)
     {
         int p = i, c = p * 2;
@@ -46,6 +47,7 @@ void HeapSort(vector<pair<int, int>> * tree)
         }
     }
     
+    //MaxHeap구조에서 1번과 마지막 pair를 Swap하면서 새로운 벡터에 큰값부터 삽입
     vector<pair<int, int>> res;
     while(tree->size() > 1)
     {
@@ -71,16 +73,16 @@ void HeapSort(vector<pair<int, int>> * tree)
         
     }
 
+    //큰 값부터 삽입되었으니 
     for (int i = res.size() - 1; i >= 0; i--)
         cout << res.at(i).first << " " << res.at(i).second << endl;
 }
 
 int main()
 {
-    vector<pair<int, int>> tree {pair<int, int>(0, 0)};
+    vector<pair<int, int>> tree {pair<int, int>(0, 0)};     //1번에서부터 시작하기위해 0번위치에 아무거나 삽입
     
     InsertData(&tree);
-    sort(i, i)
     HeapSort(&tree);
 
     return 0;
