@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-
+/*
 void InsertData(vector<pair<int, int>> * tree)
 {
     int n;
@@ -87,3 +87,113 @@ int main()
 
     return 0;
 }
+*/
+
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+class Student {
+public:
+	string name;
+	int score;
+	Student(string name, int score) {
+		this->name = name;
+		this->score = score;
+	}
+	// 정렬 기준은 '점수가 작은 순서' 
+	bool operator <(Student &student) {
+		return this->score < student.score;
+	}
+};
+
+bool compare(int a, int b) {
+	return a > b;
+} 
+
+// bool CompFunc(Student s1, Student s2)
+// {
+//     return s1.sc < s2.sc;
+// }
+
+int main(void) {
+	Student students[] = {
+		Student("나동빈", 90),
+		Student("이상욱", 93),
+		Student("박한울", 97),
+		Student("강종구", 87),
+		Student("이태일", 92)
+	};
+	sort(students, students + 5);
+	for(int i = 0; i < 5; i++) {
+		cout << students[i].name << ' ';
+	}
+}
+
+
+
+
+/*
+bool CompareFunc(pair<int, int> p1, pair<int, int> p2)
+{
+    if(p1.first < p2.first)
+        return true;
+    else if(p1.first == p2.first)
+    {
+        if(p1.second < p2.second)
+            return true;
+        else
+            return false;
+    }
+    else
+        return false;
+}
+
+int main()
+{
+    
+    vector< pair<int, int> > arr;
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int n1, n2;
+        cin >> n1 >> n2;
+
+        arr.push_back(pair<int, int>(n1, n2));
+    }
+    sort(arr.begin(), arr.end(), CompareFunc);
+
+    for (int i = 0; i < n; i++)
+        cout << arr.at(i).first << " " << arr.at(i).second << '\n';
+    
+    return 0;
+}
+*/
+
+/* 
+//int Type sort 
+
+//Defalut sort Asc
+bool CompareFunc(int n1, int n2)
+{
+    return n1 < n2;
+    //sort Desc
+    //return n1 > n2;
+}
+
+int main()
+{
+    int arr[] = { 5,3,2,6,8,0,10,43};
+    
+    sort(arr, arr + 8, CompareFunc);
+    for (int i = 0; i < 8; i++)
+        cout << arr[i] << " ";
+    cout << '\n';
+
+    return 0;
+}
+
+*/
