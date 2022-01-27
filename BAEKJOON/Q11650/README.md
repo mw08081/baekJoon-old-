@@ -39,8 +39,23 @@ int main()
 sort()함수의 매겨변수는 `주소` 또는 `vector<T>::iterator`값을 넣어주면 된다 그러므로 `arr` 또는 `arr.begin()`값을 이용할 수 있다  
 　   
   
-하지만 단순히 iterator값만 써줄 경우 자동적으로 오름차순 정렬만 가능한데, 내림차순 정렬은 `Compare _comp`매개변수가 추가된 함수의 오버로딩을 사용하면 된다  
+하지만 단순히 iterator값만 써줄 경우 자동적으로 오름차순 정렬만 가능한데, 내림차순 정렬은 `Compare _comp`매개변수가 추가해주면된다 
 ```c++
-  
-  
+bool CompareFunc(int n1, int n2)
+{
+    return n1 > n2;
+}
+
+int main()
+{
+    int arr[] = { 5,3,2,6,8,0,10,43};
+    
+    sort(arr, arr + 8, CompareFunc);
+    for (int i = 0; i < 8; i++)
+        cout << arr[i] << " ";
+    cout << '\n';
+
+    return 0;
+}
 ```
+물론 만약 CompareFunc()함수의 return을 `return n1 > n2`가 아닌 `return n1 < n2`로 변경한다면 오름차순 정렬도 
