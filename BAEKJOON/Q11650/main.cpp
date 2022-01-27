@@ -96,6 +96,11 @@ class Student {
     string name;
     int sc;
 
+    Student()
+    {
+        this->name = "noCont";
+        this->sc = 0;
+    }
     Student(string name, int sc)
     {
         this->name = name;
@@ -131,12 +136,6 @@ int main()
     
     return 0;
 }
-
-
-
-
-
-
 
 /*                              vector< pair<int, int> > type sort
 
