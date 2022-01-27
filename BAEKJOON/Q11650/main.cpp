@@ -89,7 +89,7 @@ int main()
 }
 */
 
-/*                          class type sort
+/*                          class type sort */
 
 class Student {
     public :
@@ -123,8 +123,8 @@ int main()
         Student("d", 69)
     };
 
-    //sort(students, students + 4);
-    sort(students, students + 4, CompFunc);
+    sort(students, students + 4);
+    //sort(students, students + 4, CompFunc);
 
     for (int i = 0; i < 4; i++)
         cout << students[i].name << " ";
@@ -132,7 +132,11 @@ int main()
     return 0;
 }
 
-*/
+
+
+
+
+
 
 /*                              vector< pair<int, int> > type sort
 
@@ -174,6 +178,8 @@ int main()
 }
 */
 
+/*                                  vector<int> Type sort
+
 int main()
 {
     vector<int> arr;
@@ -188,6 +194,9 @@ int main()
     
     return 0;
 }
+
+*/
+
 
 /*                                  int Type sort 
 
