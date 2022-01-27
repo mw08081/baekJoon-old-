@@ -123,5 +123,5 @@ int main()
 }
 
 ```
-sort()함수가 자동적으로 vector내의 pair.first와 pair.second를 비교하여 오름차순으로 정리해줘서 쉽게 해결할 수 있다
+sort()함수가 자동적으로 vector내의 pair.first와 pair.second를 비교하여 오름차순으로 정리해줘서 쉽게 해결할 수 있다  
 그렇다면 내림차순은 어떻게 만들까?  
