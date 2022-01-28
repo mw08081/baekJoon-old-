@@ -41,7 +41,8 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q11650
 
 　  
 ## Special(onMyWay || Hard)
-1929  - Sieve of Eratosthenes  
-2447 - Recursive PrintStar  
-10757 - LongInt Calc(using string)   
-10870 - Recursive Fibonacci  
+1929  - Sieve of Eratosthenes  H  
+2447 - Recursive PrintStar  M, H  
+10757 - LongInt Calc(using string)   M, H    
+10870 - Recursive Fibonacci  M  
+11650 - vector<pair<int, int>> HeapSort M  
