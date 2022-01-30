@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-/*
+
 void InsertData(vector<pair<int, int>> * tree)
 {
     int n;
@@ -87,20 +87,15 @@ int main()
 
     return 0;
 }
-*/
 
-/*                          class type sort */
+
+/*              summary - class sort Using Compare _comp && Operator Overloading     
 
 class Student {
-    public :
+public :
     string name;
     int sc;
 
-    Student()
-    {
-        this->name = "noCont";
-        this->sc = 0;
-    }
     Student(string name, int sc)
     {
         this->name = name;
@@ -136,8 +131,9 @@ int main()
     
     return 0;
 }
+*/
 
-/*                              vector< pair<int, int> > type sort
+/*              summary - vector<pair<int, int>> sort Using Compare _comp
 
 bool CompareFunc(pair<int, int> p1, pair<int, int> p2)
 {
@@ -177,7 +173,40 @@ int main()
 }
 */
 
-/*                                  vector<int> Type sort
+/*              summary - vector<pair<int, int>> sort
+
+int main()
+{
+    int n;
+    cin >> n;
+    
+    vector<pair<int, int>> arr;
+    
+    for(int i = 0; i < n; i++)
+    {
+        int n1, n2;
+        cin >> n1 >> n2;
+        
+        arr.push_back(pair<int, int>(n1, n2));
+    }
+    
+    sort(arr.begin(),arr.end());
+
+    for(int i = 0; i < arr.size(); i++)
+        cout << arr[i].first << " " << arr[i].second << '\n';
+
+}
+
+*/
+
+/*              summary - vector<int> sort Using Compare _comp
+
+bool CompareFunc(int n1, int n2)
+{
+    //return n1 < n2;
+    //sort Desc
+    return n1 > n2;
+}
 
 int main()
 {
@@ -186,7 +215,7 @@ int main()
     for (int i = 0; i < 5; i++)
         arr.push_back(5 - i);
 
-    sort(arr.begin(), arr.end());
+    sort(arr.begin(), arr.end(), CompareFunc);
 
     for (int i = 0; i < arr.size(); i++)
         cout << arr.at(i) << " ";
@@ -196,15 +225,14 @@ int main()
 
 */
 
-
-/*                                  int Type sort 
+/*              summary - int sort Using Compare _comp
 
 //Defalut sort Asc
 bool CompareFunc(int n1, int n2)
 {
-    return n1 < n2;
+    //return n1 < n2;
     //sort Desc
-    //return n1 > n2;
+    return n1 > n2;
 }
 
 int main()

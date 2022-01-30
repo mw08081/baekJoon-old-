@@ -2,6 +2,73 @@
 #include <vector>
 using namespace std;
 
+/* summary - MergeSort */
+
+int sorted[1000000];
+
+void Merge(int * arr, int l, int mid, int r)
+{
+    int i = l;
+    int j = mid + 1;
+    int k = l;
+
+    while(i <= mid && j <= r)       
+    {
+        if(arr[i] <= arr[j])
+            sorted[k++] = arr[i++];
+        else
+            sorted[k++] = arr[j++];
+    }
+
+    if(i > mid)
+        for (int t = j; t <= r; t++)
+            sorted[k++] = arr[t];
+    else
+        for (int t = i; t <= mid; t++)
+            sorted[k++] = arr[t];
+
+    for (int t = l; t <= r; t++)
+        arr[t] = sorted[t];
+}
+
+void MergeSort(int * arr, int l, int r)
+{
+    if(l < r)
+    {
+        int mid = (l + r) / 2;
+
+        MergeSort(arr, l, mid);
+        MergeSort(arr, mid + 1, r);
+        Merge(arr, l, mid, r);
+    }
+}
+
+int main()
+{
+    int * arr = new int[1000000];
+    int n;
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int tmp;
+        cin >> tmp;
+
+        arr[i] = tmp;
+    }
+
+    MergeSort(arr, 0, n - 1);
+
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << '\n';
+
+    return 0;
+}
+
+
+
+/* summary - HeapSort Using Vector(Complete)
+
 void Swap(int * n1, int * n2)
 {
     int tmp = *n1;
@@ -87,9 +154,10 @@ int main()
 
     return 0;
 }
+*/
 
+/* Summary - HeapSort Using Array(Not Complete)
 
-/*
 #define MAX 1000000
 
 struct MaxHeap {
