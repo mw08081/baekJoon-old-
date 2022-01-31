@@ -1,9 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-/*
+/*                          Summary - sort using HeapSort vector<pair<int, int>> */
+
 void Swap(pair<int, int> * n1, pair<int, int> * n2)
 {
     pair<int, int> tmp = *n1;
@@ -69,4 +71,31 @@ int main()
     
     return 0;
 }
+
+
+/*                          Summary - sort using #include <algorithm> sort()
+
+int main()
+{
+    vector<pair<int, int> > arr;
+    int n;
+
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+    {
+        int n1, n2;
+        cin >> n1 >> n2;
+
+        arr.push_back(pair<int, int>(n2, n1));
+    }
+
+    sort(arr.begin(), arr.end());
+
+    for (int i = 0; i < n; i++)
+        cout << arr.at(i).second << " " << arr.at(i).first << '\n';
+
+    return 0;
+}
+
 */
