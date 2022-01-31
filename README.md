@@ -28,11 +28,11 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1008/README.md
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1152/README.md  
 1929 - `fill_n`, endl vs '\n'  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md    
-2751 - vector  
+2751 - `vector<T>` & `#include <vector>`    
 https://blog.naver.com/president304/222422474064  
 2108 -  `T ceil<T> (T val)`, `T floor<T>(T val)`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q2108/README.md  
-3053 - `M_PI, pow(), powl()` feat. (`#include <cmath>`, `#define _USE_MATH_DEFINES`)  
+3053 - `M_PI, pow(), powl()` & `#include <cmath>`, `#define _USE_MATH_DEFINES`   
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
 7568 - `pair<T, T>`, `vector<pair<int, int>>`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q7568/README.md  
