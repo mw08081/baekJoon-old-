@@ -4,14 +4,12 @@
 
 using namespace std;
 
-bool CompareFunc(string s1, string s2)
+bool CompareFunc(const string &s1, const string &s2)
 {
-    if(s1.length() != s2.length)
+    if(s1.length() != s2.length())
         return s1.length() < s2.length();
     else
-    {
-        while()
-    }
+        return s1 < s2;
 }
 
 int main()
@@ -20,23 +18,21 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    vector<string> arr;
     int n;
-
     cin >> n;
-    for (int i = 0; i < n; i++)
-    {
-        string tmp;
-        cin >> tmp;
+    vector<string> arr(n);
 
-        arr.push_back(tmp);
-    }
+    for (int i = 0; i < n; i++)
+        cin >> arr.at(i);
 
     sort(arr.begin(), arr.end(), CompareFunc);
 
-    cout << '\n';
     for (vector<string>::iterator it = arr.begin(); it < arr.end(); it++)
+    {
+        if(it != arr.begin() && *it == *(it - 1))
+            continue;
         cout << *it << '\n';
+    }
 
     return 0;
 }
