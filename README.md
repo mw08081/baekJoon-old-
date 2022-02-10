@@ -14,7 +14,7 @@ https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1712/README.md
 2750 - O(N^2) BubbleSort, SelectSort, QuickSort, InsertionSort  
 2751 - O(N lgN) HeapSort, MergeSort  
 7568 - 덩치  
-10814 - stableSort vs unStableSort
+10814 - stableSort vs unStableSort  
 10989 - O(N) CountingSort  
 　  
 - MatheMatical  
