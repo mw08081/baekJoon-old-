@@ -29,7 +29,7 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1008/README.md
 1152 - `getline(cin, str)`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1152/README.md  
 1181 - string Compare(string operator overloading '<' vs string.compare() & [`#include <string>`]  
-link  
+https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1181/README.md  
 1929 - `fill_n`, endl vs '\n'  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929/README.md    
 2751 - `vector<T>` & `#include <vector>`    
