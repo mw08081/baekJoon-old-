@@ -4,45 +4,57 @@
 
 using namespace std;
 
-bool CompFunc(pair<int, int> p1, pair<int, int> p2)
+bool SortCompare(pair<pair<int, int>, int> e1, pair<pair<int, int>, int> e2)
 {
-    return p1.second < p2.second;
+    return e1.first.second < e2.first.second;
+}
+
+bool SortReverseCompare(pair<pair<int, int>, int> e1, pair<pair<int, int>, int> e2)
+{
+    return e1.first.first < e2.first.first;
 }
 
 int main()
 {
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    
     int n;
     cin >> n;
+    vector<pair<pair<int, int>, int>> arr(n);
 
-    vector<int> arr(n);
-    vector<pair<int, int> > sortedArr(n);
-
-    for (int i = 0; i < n; i++)
+    for (int  i = 0; i < n; i++)
     {
-        cin >> arr.at(i);
-        sortedArr.at(i) = pair<int, int>(i, arr.at(i));
+        int tmp;
+        cin >> tmp;
+
+        arr.at(i).first = pair<int, int>(i, tmp);
+        arr.at(i).second = 0;
     }
-    sort(sortedArr.begin(), sortedArr.end(), CompFunc);
 
-    
-    for (int i = 0; i < n; i++)
+    sort(arr.begin(), arr.end(), SortCompare);
+
+    arr.at(0).second = 0;
+    for (int i = 1; i < n; i++)
     {
-        cout << sortedArr.at(i).first << " " << sortedArr.at(i).second << "       ";
-    }
-    cout << endl;
-
-
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            /* code */
-        }
+        int cnt = 0;
         
+        while(arr.at(i).first.second == arr.at(i - 1 - cnt).first.second)
+        {
+            cnt++;
+
+            if(i - 1 - cnt < 0)
+                break;
+        }
+            
+        arr.at(i).second = i - cnt;
     }
+        
+    sort(arr.begin(), arr.end(), SortReverseCompare);
     
-    
-    
+    for (int i = 0; i < n; i++)
+        cout << arr.at(i).second << " ";
 
     return 0;
 }

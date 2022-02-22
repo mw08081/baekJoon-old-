@@ -18,6 +18,7 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
+    /*
     int n;
     cin >> n;
     vector<string> arr(n);
@@ -33,6 +34,12 @@ int main()
             continue;
         cout << *it << '\n';
     }
+    */
+
+   string str1 = "a";
+   string str2 = "b";
+
+   cout << "res : " << (str1 < str2) << '\n';
 
     return 0;
 }
