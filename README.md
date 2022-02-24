@@ -52,3 +52,4 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q11650
 10757 - LongInt Calc(using string)   M, H    
 10870 - Recursive Fibonacci  M  
 11650 - vector<pair<int, int>> HeapSort M  
+18870 - gridCompression vector<pair<pair<int, int>, int>>
