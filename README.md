@@ -58,4 +58,4 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q11650
 
 ## References
 18870 - unique(), vector<T>.erase()  
-link
+https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q18870  
