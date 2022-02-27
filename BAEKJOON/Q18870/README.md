@@ -46,3 +46,6 @@ int main() {
 ### vector<T>.erase()
 vector<T>.erase()함수는 단순하게 특정 위치부터 특정위치의 값을 지워내는 역할을 한다  
 따라서 ` v.erase(unique(v.begin(), v.end()), v.end());`는 중복된 값이 있는 인덱스부터 끝까지 모두 지워내는 작업을 수행한다
+
+  
++++ 해당 코드 블로그 - https://hevton.tistory.com/437
