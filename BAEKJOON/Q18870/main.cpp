@@ -38,17 +38,10 @@ int main()
     arr.at(0).second = 0;
     for (int i = 1; i < n; i++)
     {
-        int cnt = 0;
-        
-        while(arr.at(i).first.second == arr.at(i - 1 - cnt).first.second)
-        {
-            cnt++;
-
-            if(i - 1 - cnt < 0)
-                break;
-        }
-            
-        arr.at(i).second = i - cnt;
+        if(arr.at(i - 1).first.second == arr.at(i).first.second)
+            arr.at(i).second = arr.at(i - 1).second;
+        else
+            arr.at(i).second = arr.at(i - 1).second + 1;
     }
         
     sort(arr.begin(), arr.end(), SortReverseCompare);
