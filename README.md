@@ -2,7 +2,10 @@
 - 단계별로 풀어보기 알고리즘 공부 시작(21.10.12. ~ )
 - 정렬단계까지만 단계별로 풀기( ~ 22.02.27.)
 - 백준코드플러스 난이도별 코드 풀기(22.02.28. ~ )
-　  
+
+vsCpp setting link  
+https://github.com/mw08081/baekJoon/blob/main/.vscode/launch.json  
+https://github.com/mw08081/baekJoon/blob/main/.vscode/tasks.json  
    　  
 ## helped
 - Algorithmic  
