@@ -9,15 +9,15 @@ https://github.com/mw08081/baekJoon/blob/main/.vscode/tasks.json
    　  
 ## helped
 - Algorithmic  
-1011 - Fly me the Alpha Centauri  
-1018 - 체스판 다시 칠하기  
+1011
+1018
 1929 - 에라토스테네스의 체  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929  
-1712 - 손익분기점  
-https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q1712/README.md  
+1712
 2750 - O(N^2) BubbleSort, SelectSort, QuickSort, InsertionSort  
 2751 - O(N lgN) HeapSort, MergeSort  
-7568 - 덩치  
+7568  
+9093
 10814 - stableSort vs unStableSort  
 10989 - O(N) CountingSort  
 　  
@@ -44,6 +44,8 @@ https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q2108/README.md
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
 7568 - `pair<T, T>`, `vector<pair<int, int>>`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q7568/README.md  
+9093 - flush buffer  
+
 10989 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q10989/README.md  
 11650 - `sort()` & `#include<algorithm>`  
