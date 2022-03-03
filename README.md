@@ -62,3 +62,5 @@ https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q11650
 ## References
 18870 - unique(), vector<T>.erase()  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q18870  
+10828 - You don't need to compare all spelling
+
