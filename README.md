@@ -9,15 +9,15 @@ https://github.com/mw08081/baekJoon/blob/main/.vscode/tasks.json
    　  
 ## helped
 - Algorithmic  
-1011
-1018
+1011  
+1018  
 1929 - 에라토스테네스의 체  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929  
 1712
 2750 - O(N^2) BubbleSort, SelectSort, QuickSort, InsertionSort  
 2751 - O(N lgN) HeapSort, MergeSort  
-7568  
-9093
+7568   
+9093  
 10814 - stableSort vs unStableSort  
 10989 - O(N) CountingSort  
 　  
