@@ -13,7 +13,7 @@ https://github.com/mw08081/baekJoon/blob/main/.vscode/tasks.json
 1018  
 1929 - 에라토스테네스의 체  
 https://github.com/mw08081/baekJoon/tree/main/BAEKJOON/Q1929  
-1712
+1712  
 2750 - O(N^2) BubbleSort, SelectSort, QuickSort, InsertionSort  
 2751 - O(N lgN) HeapSort, MergeSort  
 7568   
@@ -44,7 +44,7 @@ https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q2108/README.md
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q3053/README.md  
 7568 - `pair<T, T>`, `vector<pair<int, int>>`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q7568/README.md  
-9093 - flush buffer  
+9093 - `cin.ignore();`  -flush buffer  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q9093/README.md  
 10989 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`  
 https://github.com/mw08081/baekJoon/blob/main/BAEKJOON/Q10989/README.md  
