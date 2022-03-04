@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 #include <stack>
 using namespace std;
 
@@ -35,7 +34,6 @@ int main()
             }
             else
                 res.push(str[i]);
-            
         }
         cout << '\n';
     }
