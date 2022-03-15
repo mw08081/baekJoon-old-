@@ -10,8 +10,9 @@ int main()
     cout.tie(NULL);
 
     stack<int> s;
-    bool isUsed[100001] {0};
-    bool isPoped[10001] {0};
+    string res;
+    bool isUsed[100002] {0};
+    bool isPoped[100002] {0};
     int n, i = 1, input;
     cin >> n;
 
@@ -25,7 +26,7 @@ int main()
             {
                 isUsed[i] = true;
                 s.push(i);
-                cout << "+" << '\n';
+                res += "+\n";
             }
             i++;
         }
@@ -35,19 +36,16 @@ int main()
             {
                 s.pop();
                 isPoped[i] = true;
-                //cout << "-" << '\n';
-                
-                cout << "- ";
+                res += "-\n";
             }
             i--;
-            cout << i << '\n';
         }
     }
 
-    if(i != 1)
+    if(!s.empty())
         cout << "NO" << '\n';
-
-
+    else
+        cout << res;
 
     return 0;
 }
