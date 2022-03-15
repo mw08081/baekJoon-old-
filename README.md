@@ -8,7 +8,7 @@ https://github.com/mw08081/baekJoon/blob/main/.vscode/launch.json
 https://github.com/mw08081/baekJoon/blob/main/.vscode/tasks.json  
    　  
 ## helped
-- Algorithmic  
+- Algorithmic   
 1011  
 1018  
 1929 - 에라토스테네스의 체  
